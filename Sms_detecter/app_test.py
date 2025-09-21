@@ -75,8 +75,8 @@ st.markdown("""
 
 # --- Load Model and Vectorizer (No changes here) ---
 try:
-    model = pickle.load(open("D:/Ml Project/Sms_detecter/Indian_Spam_Model.pkl", "rb"))
-    vectorizer = pickle.load(open("D:/Ml Project/Sms_detecter/vectorizer.pkl", "rb"))
+    model = pickle.load(open("E:/ToBeArrenged/Ml Project/Sms_detecter/Indian_Spam_Model.pkl", "rb"))
+    vectorizer = pickle.load(open("E:/ToBeArrenged/Ml Project/Sms_detecter/vectorizer.pkl", "rb"))
 except FileNotFoundError:
     st.error("Model or vectorizer file not found. Please check the file paths.")
     st.stop()
@@ -114,4 +114,4 @@ if st.button("Check Message"):
                 st.error("🚨 This message is **SPAM**!")
             else:
                 st.success("✅ This message is **NOT Spam**.")
-                st.balloons()
+                # st.balloons()
